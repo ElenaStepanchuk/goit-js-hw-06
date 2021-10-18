@@ -4,11 +4,11 @@ const btnValueRef = document.querySelector('#value');
 
 let counterValue = 0;
 
-btnIncrementRef.addEventListener('click', () => {
+btnIncrementRef.addEventListener('submit', () => {
     counterValue += 1;
     btnValueRef.textContent = counterValue;
 })
-btnDecrementRef.addEventListener('click', () => {
+btnDecrementRef.addEventListener('submit', () => {
     counterValue -= 1;
     btnValueRef.textContent = counterValue;
 })
