@@ -4,8 +4,7 @@ const refs = {
 
 
 function handleValidatorInput(event) {
-    console.log(event.target.value.length);
-    
+        
     if (event.target.value.length === 6) {
         event.target.classList.add('valid');
         event.target.classList.remove('invalid');
