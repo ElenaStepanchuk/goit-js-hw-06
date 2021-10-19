@@ -1,8 +1,8 @@
-// const navEl = document.querySelectorAll('.item');
+const navEl = document.querySelectorAll('.item');
 
-// console.log('Number of categories:', navEl.length);
+console.log('Number of categories:', navEl.length);
 
-// navEl.forEach(elem => {
-//     console.log(elem.firstElementChild.textContent);
-//     console.log(elem.lastElementChild.children.length);
-// })
+navEl.forEach(elem => {
+    console.log(elem.firstElementChild.textContent);
+    console.log(elem.lastElementChild.children.length);
+})

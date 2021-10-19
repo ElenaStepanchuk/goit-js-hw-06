@@ -1,10 +1,12 @@
-const inputTextRef = document.querySelector('input#name-input');
-const outputTextRef = document.querySelector('span#name-output');
+const refs = {
+  input: document.querySelector('input#name-input'),
+  output: document.querySelector('span#name-output'),
+}
 
 function handleTextInput () {
-    if (inputTextRef.value === '') {
-      return  outputTextRef.textContent = 'Anonymous';
+    if (refs.input.value === '') {
+      return  refs.output.textContent = 'Anonymous';
     }
-    return outputTextRef.textContent = inputTextRef.value;
+    return refs.output.textContent = refs.input.value;
 }
-inputTextRef.addEventListener('input', handleTextInput)
+refs.input.addEventListener('input', handleTextInput)
