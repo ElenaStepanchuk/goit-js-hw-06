@@ -24,8 +24,11 @@ refs.input.addEventListener("input", inputChange);
 
 let baseboxSize = 30;
 
+// console.log('count:', Number(refs.input.getAttribute("count")));
+
 function handleCreateCollection() {
   let countBox = Number(refs.input.getAttribute("count"));
+  // console.log('count:', Number(refs.input.getAttribute("count")));
   console.log(countBox);
   for (let i = 0; i < countBox; i++) {
     baseboxSize += 10;
