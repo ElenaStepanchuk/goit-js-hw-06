@@ -2,7 +2,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 const color = getRandomHexColor();
-console.log(color);
+// console.log(color);
 
 const refs = {
   span: document.querySelector('.color'),
@@ -16,10 +16,11 @@ function handleChangeColor(event) {
   if (!event.target.classList.contains('change-color')) {
     return;
   }
-  return refs.div.parentElement.style.backgroundColor = getRandomHexColor();
-  
+  refs.div.parentElement.style.backgroundColor = getRandomHexColor();
+  refs.span.textContent = getRandomHexColor();
+  console.log(refs.span.textContent);
 }
 
 refs.button.addEventListener('click', handleChangeColor);
-console.log(refs.span);
+// console.log(refs.span);
  

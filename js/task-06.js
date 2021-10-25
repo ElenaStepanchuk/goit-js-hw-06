@@ -1,11 +1,11 @@
 const refs = {
     validator: document.querySelector('#validation-input'),
 }
-
+console.log(refs.validator.dataset.length);
 
 function handleValidatorInput(event) {
         
-    if (event.target.value.length === 6) {
+    if (event.target.value.length === Number(refs.validator.getAttribute('data-length'))) {
         event.target.classList.add('valid');
         event.target.classList.remove('invalid');
     } else {
