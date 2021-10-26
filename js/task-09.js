@@ -16,8 +16,9 @@ function handleChangeColor(event) {
   if (!event.target.classList.contains('change-color')) {
     return;
   }
-  refs.div.parentElement.style.backgroundColor = getRandomHexColor();
-  refs.span.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  refs.div.parentElement.style.backgroundColor = color;
+  refs.span.textContent = color;
   console.log(refs.span.textContent);
 }
 
